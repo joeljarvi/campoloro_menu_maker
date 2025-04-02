@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+h1 {
+  font-family: var(--font-academyFont);
+}
+
+h2 {
+  font-family: var(--font-gtPressura);
+}
+
+h3 {
+  font-family: var(--font-gtPressuraMonoBold);
+}
+
+h4 {
+  font-family: var(--font-gtPressuraMonoBold);
+}
+
+h5 {
+  font-family: var(--font-gtPressura);
+}
+
+p {
+  font-family: var(--font-gtPressuraMono);
+}
+
+.placeholder {
+  font-family: var(--font-gtPressuraMonoBold);
+}
+
+label {
+  font-family: var(--font-gtPressuraMono);
+}
