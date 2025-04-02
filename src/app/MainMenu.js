@@ -482,7 +482,10 @@ export default function MainMenu() {
 
   return (
     <div className="w-full flex flex-col justify-center items-center gap-4">
-      <div id="a41" className="w-[744.375px] h-[1052.8125px] bg-white">
+      <div
+        id="a41"
+        className="lg:w-[744.375px] h-[1052.8125px] w-full bg-white"
+      >
         <div className="grid grid-cols-12 gap-x-8 p-8">
           <h1 className="text-6xl tracking-tight leading-tight col-start-1 col-span-12 mb-8 text-center">
             CAMPOLORO
