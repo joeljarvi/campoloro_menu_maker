@@ -1,4 +1,5 @@
 "use client";
+import HouseWineSection from "./HouseWineSection";
 import MenuSectionHeader from "./MenuSectionHeader";
 
 export default function WineSection({ wineData, title }) {
@@ -14,6 +15,7 @@ export default function WineSection({ wineData, title }) {
           <p className="col-start-11 col-span-1 uppercase text-xs ">(glass)</p>
           <p className="col-start-12 col-span-1 uppercase text-xs ">(bottle)</p>
         </div>
+
         {wineData.map((item, i) => (
           <div
             key={i}

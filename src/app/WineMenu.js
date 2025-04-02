@@ -2,6 +2,7 @@
 import { useState } from "react";
 import WineSection from "./WineSection";
 import BubbleSection from "./BubbleSection";
+import HouseWineSection from "./HouseWineSection";
 
 import SpiritsSection from "./SpiritsSection";
 
@@ -475,6 +476,15 @@ export default function WineMenu() {
           <h3 className="col-start-1 col-span-12 mt-4 text-center">3 / 3</h3>
         </div>
       </div>
+      {/* <div id="a41" className="w-[744.375px] h-[1052.8125px] bg-white">
+        <div className="grid grid-cols-12 gap-x-8 p-8  ">
+          <div className="col-start-1 col-span-12 border-t">
+            <HouseWineSection wineData={wineData} />
+          </div>
+          <div className="col-start-1 col-span-12 border-b"></div>
+          <h3 className="col-start-1 col-span-12 mt-4 text-center">3 / 3</h3>
+        </div>
+      </div> */}
     </div>
   );
 }
