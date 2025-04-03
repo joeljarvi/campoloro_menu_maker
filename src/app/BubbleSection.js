@@ -5,7 +5,6 @@ export default function BubbleSection({ wineData, title }) {
   return (
     <div className="w-full pb-4">
       <div className="flex flex-row w-full gap-4 leading-tight items-center justify-between border-b pb-1.5 mb-2 pt-1 px-4">
-        <p className="uppercase text-xs col-span-1">(T)</p>
         <div className="col-span-7">
           <MenuSectionHeader title={title} />
         </div>

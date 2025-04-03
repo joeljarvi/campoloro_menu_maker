@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import WineSection from "./WineSection";
+
 import BubbleSection from "./BubbleSection";
 import HouseWineSection from "./HouseWineSection";
 
@@ -465,21 +465,21 @@ export default function WineMenu() {
       <div id="a41" className="w-[744.375px] h-[1052.8125px] bg-white">
         <div className="grid grid-cols-12 gap-x-8 p-8  ">
           <div className="col-start-1 col-span-12 border-t">
-            <BubbleSection title="BUBBLES" wineData={wineData.bubbleMenu} />
-            <WineSection title="White Wines" wineData={wineData.whiteMenu} />
-
-            <WineSection title="Red Wines" wineData={wineData.redMenu} />
+            <HouseWineSection title="Bubbel" wineData={wineData.bubbleMenu} />
+            <HouseWineSection
+              title="Husets Vita"
+              wineData={wineData.whiteMenu}
+            />
+            <HouseWineSection title="Husets röda" wineData={wineData.redMenu} />
           </div>
-          <div className="col-start-1 col-span-12 border-b">
-            <SpiritsSection title="sprit" spiritsData={spiritsData} />
-          </div>
+          <div className="col-start-1 col-span-12 "></div>
           <h3 className="col-start-1 col-span-12 mt-4 text-center">3 / 3</h3>
         </div>
       </div>
       {/* <div id="a41" className="w-[744.375px] h-[1052.8125px] bg-white">
         <div className="grid grid-cols-12 gap-x-8 p-8  ">
           <div className="col-start-1 col-span-12 border-t">
-            <HouseWineSection wineData={wineData} />
+         
           </div>
           <div className="col-start-1 col-span-12 border-b"></div>
           <h3 className="col-start-1 col-span-12 mt-4 text-center">3 / 3</h3>

@@ -33,3 +33,11 @@ p {
 label {
   font-family: var(--font-gtPressuraMono);
 }
+
+strong {
+  font-family: var(--font-gtPressuraMonoBold);
+}
+
+span {
+  font-family: var(--font-gtPressuraMono);
+}

@@ -5,29 +5,21 @@ export default function MenuSection({ menuData, title }) {
   return (
     <div className="w-full pb-4 border-b">
       <div className="grid grid-cols-12 gap-x-4 w-full leading-tight items-center justify-center border-b pb-1.5 mb-2 pt-1">
-        <p className="uppercase text-xs col-start-1">(T)</p>
-
-        <div className="col-start-4">
+        <div className="-ml-8 col-start-4">
           <MenuSectionHeader title={title} />
         </div>
 
         <p
           className=" text-xs
-       col-start-9"
+       col-start-10"
         >
-          (gluten/mm.)
+          (!)
         </p>
         <p
           className="text-xs
-       col-start-11 text-right"
+       col-start-11 "
         >
-          (dela)
-        </p>
-        <p
-          className="uppercase text-xs
-       col-start-12 text-right"
-        >
-          (KR)
+          (/)
         </p>
       </div>
       {menuData.map((item, i) => (

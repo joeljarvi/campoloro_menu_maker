@@ -62,9 +62,7 @@ const WineDropdown = ({ wineData, selectedWine, setSelectedWine }) => {
 };
 
 export default function HouseWineSection({ wineData, title }) {
-  const [selectedWine1, setSelectedWine1] = useState(wineData[0]);
-  const [selectedWine2, setSelectedWine2] = useState(wineData[1]);
-  const [selectedWine3, setSelectedWine3] = useState(wineData[2]);
+  const [selectedWine1, setSelectedWine1] = useState;
 
   // Create an array of selected wines
   const selectedWines = [selectedWine1, selectedWine2, selectedWine3];
@@ -94,18 +92,8 @@ export default function HouseWineSection({ wineData, title }) {
         selectedWine={selectedWine1}
         setSelectedWine={setSelectedWine1}
       />
-      <WineDropdown
-        wineData={wineData}
-        selectedWine={selectedWine2}
-        setSelectedWine={setSelectedWine2}
-      />
-      <WineDropdown
-        wineData={wineData}
-        selectedWine={selectedWine3}
-        setSelectedWine={setSelectedWine3}
-      />
 
-      <div className="pb-4.5 border-b">
+      <div className="pb-2 border-b">
         {availableWines.map((item, i) => (
           <div
             key={i}

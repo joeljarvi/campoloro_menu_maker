@@ -163,12 +163,12 @@ export default function MainMenu() {
       },
       {
         title: "Verbena",
-        description: "Korsikanskt Verbena Örtte EKO",
+        description: "",
         price: 59,
       },
       {
         title: "Te",
-        description: "Earl Grey",
+        description: "",
         price: 45,
       },
     ],
@@ -483,12 +483,14 @@ export default function MainMenu() {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-4">
       <div id="a41" className="w-[744.375px] h-[1052.8125px] bg-white">
-        <div className="grid grid-cols-12 gap-x-8 p-8">
-          <h1 className="text-6xl tracking-tight leading-tight col-start-1 col-span-12 mb-8 text-center">
+        <div className="grid grid-cols-12 gap-x-8 pt-8 px-8">
+          <h1 className="text-6xl tracking-tight leading-tight col-start-1 col-span-12 mb-4 text-center">
             CAMPOLORO
           </h1>
 
           <div className="col-start-1 col-span-12 border-t">
+            <TipsSection title="Kvällens Tips" menuData={menuData} />
+
             <AperitifSection
               title="aperitif"
               menuData={menuData.aperitifMenu}
@@ -498,21 +500,35 @@ export default function MainMenu() {
               menuData={menuData.appetizerMenu}
             />
             <MenuSection title="varmrätter" menuData={menuData.mainsMenu} />
-            <TipsSection title="Tips från köket" menuData={menuData} />
           </div>
+
+          <p
+            className=" mt-2 text-xs
+       col-span-6"
+          >
+            (!) = Allergier/intolerans; Kan innehålla spår av gluten, laktos,
+            nötter m.m. Fråga gärna om innehållet i maten om du är allergisk!
+          </p>
+          <p
+            className="mt-2 text-xs
+       col-start-7 col-span-4 "
+          >
+            (/) = Dela gärna på två
+          </p>
           <h3 className="col-start-1 col-span-12 mt-4 text-center">1 / 3</h3>
         </div>
       </div>
       <div id="a42" className="w-[744.375px] h-[1052.8125px] bg-white">
-        <div className="grid grid-cols-12 gap-x-8 p-8">
-          <h1 className="text-6xl tracking-tight leading-tight col-start-1 col-span-12 mb-8 text-center">
-            CAMPOLORO
-          </h1>
-          <div className="col-start-1 col-span-12 border-t">
+        <div className="grid grid-cols-12 gap-x-8 pt-8 px-8">
+          <div className="col-start-1 col-span-7 border-t">
             <DessertSection title="dessert" menuData={menuData.dessertsMenu} />
-            <DrinkSection title="dryck" menuData={menuData.drinksMenu} />
-
+          </div>
+          <div className="col-start-8 col-span-5 border-t">
             <HotSection title="varm dryck" menuData={menuData.hotDrinksMenu} />
+          </div>
+          <div className="col-start-1 col-span-12 border-t">
+            <DrinkSection title="dryck" menuData={menuData.drinksMenu} />
+            <DrinkSection title="Sprit" menuData={menuData.spiritsMenu} />
           </div>
           <h3 className="col-start-1 col-span-12 mt-4 text-center">2 / 3</h3>
         </div>
