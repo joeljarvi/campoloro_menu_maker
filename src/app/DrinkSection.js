@@ -5,7 +5,7 @@ export default function DrinkSection({ menuData, title }) {
   return (
     <div className="w-full pb-4 border-b">
       <div className="grid grid-cols-12 gap-x-8 w-full leading-tight items-center justify-center border-b pb-1.5 mb-2 pt-1">
-        <div className="col-start-4 col-span-4">
+        <div className="-ml-8 col-start-4">
           <MenuSectionHeader title={title} />
         </div>
 

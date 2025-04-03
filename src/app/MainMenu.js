@@ -3,10 +3,12 @@ import { useState } from "react";
 import MenuSection from "./MenuSection";
 import DessertSection from "./DessertSection";
 import DrinkSection from "./DrinkSection";
+
 import HotSection from "./HotSection";
 import AperitifSection from "./AperitifSection";
 import AppetizerSection from "./AppetizerSection";
 import TipsSection from "./TipsSection";
+import SpiritSection from "./SpiritsSection";
 
 export default function MainMenu() {
   const [menuData, setMenuData] = useState({
@@ -528,7 +530,7 @@ export default function MainMenu() {
           </div>
           <div className="col-start-1 col-span-12 border-t">
             <DrinkSection title="dryck" menuData={menuData.drinksMenu} />
-            <DrinkSection title="Sprit" menuData={menuData.spiritsMenu} />
+            <SpiritSection title="Sprit" menuData={menuData.spiritsMenu} />
           </div>
           <h3 className="col-start-1 col-span-12 mt-4 text-center">2 / 3</h3>
         </div>
